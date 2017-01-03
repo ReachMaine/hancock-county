@@ -1,0 +1,29 @@
+
+/* 
+ * Rounded Border Radius Mixin
+ * Usage: @include border-radius(24px);
+*/
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/*
+ * Fontsize Mixin in Pixels w/ fallback
+ * Usage: @include font-size(14);
+*/
+@mixin font-size($sizeValue) {
+	font-size: $sizeValue + px;
+	font-size: ($sizeValue / 16) + rem;
+}
+
+/*
+ * Line-height Mixin in Pixels w/ fallback
+ * Usage: @include line-height(16);
+*/
+@mixin line-height($sizeValue) {
+	line-height: $sizeValue + px;
+	line-height: ($sizeValue / 16) + rem;
+}

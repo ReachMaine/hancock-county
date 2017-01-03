@@ -1,0 +1,774 @@
+@charset "UTF-8";
+
+/*
+* Title: Hancock County Comissioners Office
+* Author: Addison Pellerano
+* Author Email: apellerano@ellsworthamerican.com
+* Author URL: http://ellsworthamerican.com
+*/
+
+/* Imports --------------------------------------------- */
+@import "compass";
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import "partials/settings";
+@import "partials/functions";
+
+/* General Selectors ----------------------------------- */
+body {
+	background-color: $light-blue;
+	@include font-size(14);
+	@include line-height(16);
+	font-family: $sans-serif;
+}
+
+/* Header Background ----------------------------------- */
+#bg {
+	@extend .wide;
+	z-index: 1;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+
+	img {
+		width: auto !important;
+		height: 100%;
+	}
+}
+
+/* Body Wrapper ---------------------------------------- */
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	@include pie-clearfix;
+	z-index: 999;
+	margin-top: -232px;
+	position: relative;
+
+	/* Body Header -------------------------------------- */
+	header {
+		float: left;
+		width: 100%;
+		height: 232px;
+		@include pie-clearfix;
+
+		/* Site Logo ------------------------------------- */
+		#logo {
+			margin-left: 7.5%;
+			width: 20%;
+			float: left;
+			padding-top: 17px;
+
+			/* Logo Image --------------------------------- */
+			img {
+			}
+		}
+
+		/* Site Title Container -------------------------- */
+		#site-title {
+			width: 55%;
+			float: left;
+			margin-left: 8%;
+			margin-right: 4%;
+			padding-top: 50px;
+		}
+
+		/* Top Search Box -------------------------------- */
+		#search {
+			float: right;
+			border: 1px solid $white;
+			height: 28px;
+			width: 244px;
+			background-color: $dark-blue;
+			padding: 2px;
+			margin-right: 1px;
+			margin-bottom: 5px;
+			margin-top: -12px;
+
+			/* Search Box Label --------------------------- */
+			label {
+				@extend .element-invisible;
+			}
+
+			/* Search Input Box --------------------------- */
+			input[type="text"] {
+				@include font-size(15);
+				background-color: $dark-blue;
+				@include line-height(18);
+				width: 240px;
+				height: 24px;
+				border: 0;
+				color: $white;
+				text-align: center;
+			}
+		}
+	}
+
+	/* Main Content Container --------------------------- */
+	.container {
+		background-color: $white;
+		width: 100%;
+		float: left;
+		@include pie-clearfix;
+
+		/* Modules --------------------------------------- */
+		section.modules {
+			@include pie-clearfix;
+			width: 100%;
+			float: left;
+
+			/* Top Module Section ------------------------- */
+			&#top {
+				margin-top: 2px;
+				margin-bottom: 2px;
+
+				/* Top Modules ----------------------------- */
+				article {
+					@extend .top-module;
+
+					/* Four Modules ------------------------- */
+					.four {
+						@extend .four;
+					}
+
+					/* Three Modules ------------------------ */
+					.three {
+						@extend .three;
+					}
+
+					/* Two Modules -------------------------- */
+					.two {
+						@extend .two;
+					}
+
+					/* One Module --------------------------- */
+					.one {
+						@extend .one;
+					}
+
+					/* Top Modules Images ------------------- */
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+
+			/* Bottom Modules ----------------------------- */
+			&#bottom {
+				background-color: $light-blue;
+				border: 2px solid $dark-blue;
+				width: 996px;
+				margin-top: 2px;
+				margin-bottom: 2px;
+
+				/* Bottom Modules -------------------------- */
+				article.bottom-module {
+					float: left;
+
+					/* Four Modules ------------------------- */
+					&.four {
+						width: 243px;
+						padding: 2px;
+					}
+
+					/* Three Modules ------------------------ */
+					&.three {
+						width: 318px;
+						padding: 5px 2px 2px 10px;
+					}
+
+					/* Two Modules -------------------------- */
+					&.two {
+						width: 486px;
+						padding: 5px 2px 2px 10px;
+					}
+
+					/* One Module --------------------------- */
+					&.one {
+						width: 996px;
+						padding: 1px;
+					}
+
+					/* Module Titles ------------------------ */
+					.newsflash-title {
+
+						/* Module Title Links ---------------- */
+						a {
+							font-weight: bold;
+							@include font-size(14);
+							color: darken($green, 5%);
+
+							/* Link Hover State --------------- */
+							&:hover {
+								color: lighten($green, 5%);
+							}
+						}
+					}
+
+					/* Calendar Module List ----------------- */
+					ul.latestnews,
+					.newsflash ul {
+						padding-left: 25px;
+
+						/* Calendar List Item ---------------- */
+						li {
+							list-style-type: disc;
+							@include font-size(12);
+							@include line-height(18);
+
+							/* Calendar List Item Link -------- */
+							a {
+								color: $white;
+							}
+						}
+					}
+
+
+
+					/* Module Header Level 2 & 3 ------------ */
+					h2,
+					h3 {
+						@include font-size(13);
+						font-style: italic;
+						color: darken($green, 5%);
+					}
+
+					/* Module Paragraph Content ------------- */
+					p {
+						color: $white;
+						@include font-size(12);
+						@include line-height(18);
+					}
+
+					/* Read More Link ----------------------- */
+					a.readmore {
+						@include font-size(10);
+						color: $green;
+						margin-left: 8px;
+					}
+				}
+			}
+		} /* End Top Modules ----------------------------- */
+
+		/* Top Navigation -------------------------------- */
+		nav#top-nav {
+			width: 996px;
+			float: left;
+			// clear: both;
+			background-color: $light-blue;
+			border: 2px solid $dark-blue;
+			text-align: center;
+			@include pie-clearfix;
+
+			/* List of Navigation Items ------------------- */
+			ul.nav.menu {
+				width: 100%;
+				padding-top: 8px;
+				padding-bottom: 8px;
+
+				/* Navigation Items ------------------------ */
+				li {
+					display: inline-block;
+					padding-right: 35px;
+
+					/* Last Navigation Item ----------------- */
+					&:last {
+						padding-right: 0;
+					}
+
+					/* Navigation Link ---------------------- */
+					a {
+						color: $white;   
+						@include font-size(15);
+						font-weight: bold;
+						font-style:  600;
+						text-transform: capitalize;
+						font-family: $sans-serif;
+						text-decoration: none;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+
+					/* Drop Down Menus ---------------------- */
+					&.deeper.parent {
+
+						ul.nav-child {
+							display: none;
+						}
+
+						&:hover {
+
+							ul.nav-child {
+								display: block;
+								position: absolute;
+								//left: 0;
+								background-color: $dark-blue;
+								text-align: left;
+								padding: 10px;
+								//margin-top: 3px;
+								border: 1px solid $light-blue;
+
+								li {
+									display: list-item;
+									// float: left;
+
+									a {
+										@include font-size(14);
+										@include line-height(18);
+										font-weight: 500;
+									}
+								}
+							}
+						}
+					}
+				}   
+			}
+		} /* End Navigation ------------------------------ */
+
+		/* Content Container ----------------------------- */
+		section#content {
+			width: 100%;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			float: left;
+			@include pie-clearfix;
+
+			/* Main Content Area -------------------------- */
+			div {
+				&.whole {
+					@extend .whole;
+				}
+
+				&.third {
+					@extend .third;
+				}
+
+				&.half {
+					@extend .half;
+				}
+			}
+
+			/* Page Titles -------------------------------- */
+			h1 {
+				@include font-size(28);
+				@include line-height(32);
+				color: $green;
+				font-family: $sans-serif;
+				padding-bottom: 2px;
+			}
+
+			/* Article & Module Titles -------------------- */
+			h2 {
+				@include font-size(24);
+				@include line-height(28);
+				text-decoration: none;
+				color: $green;
+				font-family: $sans-serif;
+				padding-bottom: 8px;
+				
+				/* Article & Module Titles Link ------------ */
+				a {
+					text-decoration: none;
+					color: $green;
+					font-family: $sans-serif;
+
+					/* Article & Module Titles Link Hover --- */
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+
+			/* H3 Content Tags ---------------------------- */
+			h3 {
+				@include font-size(18);
+				@include line-height(22);
+				padding-bottom: 7px;
+				font-weight: normal;
+				color: $green;
+			}
+
+			/* H5 Content Tags ---------------------------- */
+			h5 {
+				@include font-size(16);
+				@include line-height(20);
+				font-weight: bold;
+				padding-bottom: 5px;
+			}
+
+			/* Navigation Breadcrumb ---------------------- */
+			h6.breadcrumb {
+				@include font-size(14);
+				@include line-height(22);
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $green;
+				font-weight: 600;
+				padding-bottom: 6px;
+			}
+
+			/* Article Byline ----------------------------- */
+			h6.byline {
+				@include font-size(12);
+				@include line-height(16);
+				font-family: Times, serif;
+				font-weight: normal;
+				font-style: italic;
+			}
+
+			/* Content Paragraph Tags --------------------- */
+			p {
+				font-family: $sans-serif;
+				@include font-size(14);
+				@include line-height(18);
+				padding-bottom: 8px;
+				padding-top: 8px;
+
+				/* Content Paragraph Bolded Content -------- */
+				strong {
+					font-weight: bold;
+				}
+
+				/* Content Paragraph Italics Content ------- */
+				em {
+					font-style: italic;
+				}
+
+				/* Content Paragraph Links ----------------- */
+				a {
+					@include font-size(12);
+					color: $link-blue;
+				}
+
+				/* Paragraph Image Padding ----------------- */
+				span img,
+				img {
+					padding-left: 10px;
+				}
+			}
+
+			/* Content Image Container -------------------- */
+			/* Add Padding to Images here, if padding is
+			/* added to the image, it will not work ------- */
+			div.img_caption {
+				padding-left: 10px;
+
+				/* Content Images w/ Caption --------------- */
+				img.caption {
+					padding-left: 5px;
+					float: right;
+				}
+
+				/* Content Image Captions --------------- */
+				p.img_caption {
+					@extend h6.byline;
+				}
+			}
+			/* lms 24Jun2013 add padding around in-article image */
+			div.item-page {
+				.item-image {
+					padding-right: 5px;
+				}
+			}
+			/* Multiple Articles on One Page Spacing ------ */
+			.items-leading,
+			.items-row {
+				padding-bottom: 14px;
+			}
+
+			/* Content Links ------------------------------ */
+			a {
+				color: $link-blue;
+
+				/* Content Links Hover State --------------- */
+				&:hover {
+					color: lighten($green, 10%);
+				}
+			}
+
+			/* Content Lists ------------------------------ */
+			ul {
+				padding-bottom: 5px;
+				list-style-type: disc;
+				padding-left: 35px;
+
+				li {
+					padding-bottom: 5px;
+				}
+			}
+
+			ol {
+				list-style-type: decimal;
+				padding-left: 35px;
+
+				ol {
+					list-style-type: lower-alpha;
+
+					ol {
+						list-style-type: decimal-leading-zero;
+					}
+				}
+
+				li {
+					padding-bottom: 5px;
+
+					strong {
+						font-weight: bold;
+					}
+				}
+			}
+
+			/* Pagination --------------------------------- */
+			ul.pager {
+				width: 100%;
+				text-align: center;
+				list-style-type: none;
+
+				/* Pagination List Items ------------------- */
+				li.previous,
+				li.next {
+					display: inline-block;
+
+					/* Pagination List Item Links ----------- */
+					a {
+						text-decoration: none;
+						color: $link-blue;
+
+						/* Pagination List Item Links Hover -- */
+						&:hover {
+							color: lighten($green, 10%);
+						}
+					}
+				}
+
+				/* Pagination List Items Spacing ----------- */
+				li.previous {
+					padding-right: 5px;
+				}
+
+				li.next {
+					padding-left: 5px;
+				}
+			}
+
+			/* Content Table ------------------------------ */
+			table {
+				padding-bottom: 8px;
+				padding-top: 8px;
+				margin-bottom: 12px;
+				width: 90%;
+				float: left;
+				line-height: 20px;
+
+				tr {
+					padding-top:14px;
+					padding-bottom: 14px;
+
+					&:hover {
+						background-color: $light-blue;
+					}
+
+					th {
+						font-weight: 600;
+					}
+
+					td {
+						vertical-align: top;
+						text-align: left;
+
+						strong {
+							font-weight: 600;
+						}
+					}
+				}
+
+				/* Custom Content Table -------------------- */
+				&.table-items {
+
+					/* Custom Table Row --------------------- */
+					tr {
+
+						/* Table Row Highlight Off ----------- */
+						&:hover {
+							background-color: #DAE1E9;
+						}
+
+						/* Table Data Cell ------------------- */
+						td {
+							padding-left: 10px;
+							padding-top: 10px;
+						}
+					}
+				}
+			}
+
+
+
+			/* Contact Page ------------------------------- */
+			.contact {
+
+				/* Contact Position ------------------------ */
+				dl.contact-position {
+					margin-bottom: 16px;
+				}
+
+				/* Contact Address ------------------------- */
+				dl.contact-address {
+	
+					/* Contact Data ------------------------- */
+					dd {
+						display: inline;
+						padding-bottom: 2px;
+
+						p {
+							padding-bottom: 0;
+						}
+					}
+				}
+			}
+			
+			/* Contact Form ------------------------------- */
+			.contact-form {
+
+				/* Form Legend ----------------------------- */
+				legend {
+					@include font-size(12);
+					font-style: italic;
+					color: darken($red, 5%);
+					padding-bottom: 5px;
+				}
+
+				/* Contact Form Control Container ---------- */
+				.control-group {
+
+					/* Contact Form Control Label ----------- */
+					.control-label {
+
+						/* Contact Form Send Email Controls -- */
+						#jform_contact_email_copy-lbl {
+							float: left;
+							padding-right: 5px;
+						}
+					}
+				}
+			}
+
+			/* Contact Form Thumbnail Wrapper ------------- */
+			.thumbnail {
+				padding: 2px;
+				border: 1px solid darken($white, 30%);
+				margin: 0;
+				width: 117px;
+				@include line-height(0);
+
+				/* Thumbnail Image ------------------------- */
+				img {
+					width: 100%;
+					height: auto !important;
+				}
+			}
+
+			/* Left and Right Content Modules ------------- */
+			.content-module {
+				@extend .content-module;
+
+				/* Content Module Paragraph ---------------- */
+				p {
+					@include font-size(12);
+					@include line-height(15);
+				}
+
+				/* Content Module Links -------------------- */
+				a {
+					@include font-size(12);
+					color: $link-blue;
+
+					/* Content Module Link Hover ------------ */
+					&:hover {
+						color: lighten($green, 10%);
+					}
+
+					&.readmore {
+						margin-bottom: 5px;
+					}
+				}
+
+				/* Content Module Header Level 3 ----------- */
+				h3 {
+					@include font-size(18);
+					@include line-height(22);
+					font-family: $sans-serif;
+					color: $green;
+					font-weight: bold;
+					text-transform: capitalize;
+				}
+
+				/* Content Module Header Level 4 ----------- */
+				h4 {
+					@include font-size(16);
+					@include line-height(22);
+					color: $green;
+				}
+
+				/* Content Module Unordered Lists ---------- */
+				ul {
+					padding-left: 10px;
+
+					/* Content Module List Items ------------ */
+					li {
+						@include font-size(12);
+						@include line-height(18);
+
+						h4 {
+							list-style-type: none;
+						}
+
+						/* Content Module List Links --------- */
+						a {
+							@include font-size(12);
+							@include line-height(18);
+							text-decoration: none;
+							color: $link-blue;
+
+							/* Content Module List Links Hover */
+							&:hover {
+								color: lighten($green, 10%);
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+
+				ul.nav.menu {
+					list-style-type: none;
+				}
+
+				/* Joomla Specific ------------------------- */
+				.moduletable {
+					padding-bottom: 5px;
+
+					&:last-of-type {
+						padding-bottom: 0;
+					}
+				}
+			} /* End Content Module ----------------------- */
+		} /* End Content Container ----------------------- */
+
+		/* Footer ---------------------------------------- */
+		footer {
+			width: 100%;
+			float: left;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			@include pie-clearfix;
+
+			p {
+				@include font-size(12);
+			}
+		}
+
+	} /* End Container ---------------------------------- */
+} /* End Wrapper --------------------------------------- */

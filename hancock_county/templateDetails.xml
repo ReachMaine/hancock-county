@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.6" type="template" client="site">
+	<name>Hancock County</name>
+	<creationDate>22 January 2013</creationDate>
+	<author>Addison Pellerano</author>
+	<authorEmail>apellerano@ellsworthamerican.com</authorEmail>
+	<authorUrl>http://www.ellsworthamerican.com</authorUrl>
+	<copyright>Ellsworth American</copyright>
+	<version>1.1</version>
+	<description>Joomla Template designed for the Hancock County Comissioners Office</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>com_content</folder>
+		<folder>category</folder>
+		<filename>default.php</filename>
+		<folder>com_contact</folder>
+		<folder>views</folder>
+		<folder>contact</folder>
+		<folder>tmpl</folder>
+		<file>default_address.php</file>
+		<filename>ie.css</filename>
+		<filename>master.css</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+		<position>header-background</position>
+		<position>logo</position>
+		<position>site-title</position>
+		<position>top-search</position>
+		<position>top-one</position>
+		<position>top-two</position>
+		<position>top-three</position>
+		<position>top-four</position>
+		<position>top-navigation</position>
+		<position>left-content</position>
+		<position>right-content</position>
+		<position>content-above</position>
+		<position>content-area</position>
+		<position>content-below</position>
+		<position>bottom-one</position>
+		<position>bottom-two</position>
+		<position>bottom-three</position>
+		<position>bottom-four</position>
+		<position>footer</position>
+	</positions>
+</extension>

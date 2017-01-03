@@ -1,0 +1,92 @@
+/* Colors ---------------------------------------------- */
+$light-blue: #a2b4c8;
+$white: #ffffff;
+$dark-blue: #16447f;
+$green: #4b7508;
+$link-blue: #0f56a2;
+$red: #f60119;
+
+/* Typography ------------------------------------------ */
+$sans-serif: Verdana, Tahoma, Geneva, sans-serif;
+$serif: Georgia, serif;
+
+/* General Classes ------------------------------------- */
+.wide {
+	width: 1000px;
+	height: 232px;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.element-invisible {
+  display: none;
+}
+
+/* Content Area Classes -------------------------------- */
+.content-module {
+  width: 205px;
+  text-align: left;
+  padding-left: 18px;
+  padding-right: 18px;
+  
+  &.left,
+  &.right {
+    float: left;
+  }
+}
+
+.whole {
+  width: 964px;
+  float: left;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.half {
+  width: 518px;
+  float: left;
+}
+
+.third {
+  width: 722px;
+  float: left;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/* Module Classes -------------------------------------- */
+.top-module {
+  border: 1px solid $dark-blue;
+  float: left;
+  height: 156px;
+}
+
+.bottom-module {
+  float: left;
+}
+
+.four {
+  width: 246px;
+  padding: 1px;
+}
+
+.three {
+  width: 329px;
+  padding: 1px;
+}
+
+.two {
+  padding: 1px;
+  width: 497px;
+}
+
+.one {
+  padding: 1px;
+  width: 996px;
+}
