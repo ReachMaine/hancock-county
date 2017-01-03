@@ -34,7 +34,7 @@ $serif: Georgia, serif;
   text-align: left;
   padding-left: 18px;
   padding-right: 18px;
-  
+
   &.left,
   &.right {
     float: left;
@@ -89,4 +89,12 @@ $serif: Georgia, serif;
 .one {
   padding: 1px;
   width: 996px;
+}
+
+.blog.hcc-blog-nonums {
+	.items-more {
+		ol {
+			list-style-type: disc!important;
+		}
+	}
 }

@@ -143,6 +143,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 996px;
 }
 
+.blog.hcc-blog-nonums .items-more ol {
+  list-style-type: disc !important;
+}
+
 /* 
  * Rounded Border Radius Mixin
  * Usage: @include border-radius(24px);
