@@ -91,10 +91,16 @@ $serif: Georgia, serif;
   width: 996px;
 }
 
-.blog.hcc-blog-nonums {
+.blog {
 	.items-more {
+		line-height: 24px;
 		ol {
 			list-style-type: disc!important;
+			li {
+				a {
+					text-decoration: none;
+				}
+			}
 		}
 	}
 }

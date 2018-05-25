@@ -143,11 +143,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 996px;
 }
 
-.blog.hcc-blog-nonums .items-more ol {
+.blog .items-more {
+  line-height: 24px;
+}
+.blog .items-more ol {
   list-style-type: disc !important;
 }
+.blog .items-more ol li a {
+  text-decoration: none;
+}
 
-/* 
+/*
  * Rounded Border Radius Mixin
  * Usage: @include border-radius(24px);
 */
@@ -669,7 +675,7 @@ body {
   padding-top: 14px;
   padding-bottom: 14px;
 }
-#wrapper .container section#content table tr:hover {
+#wrapper .container section#content table.hcc-table-hover-color tr:hover {
   background-color: #a2b4c8;
 }
 #wrapper .container section#content table tr th {
