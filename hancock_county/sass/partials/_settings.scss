@@ -5,7 +5,7 @@ $dark-blue: #16447f;
 $green: #4b7508;
 $link-blue: #0f56a2;
 $red: #f60119;
-
+$orange: #efbb28;
 /* Typography ------------------------------------------ */
 $sans-serif: Verdana, Tahoma, Geneva, sans-serif;
 $serif: Georgia, serif;
@@ -103,4 +103,14 @@ $serif: Georgia, serif;
 			}
 		}
 	}
+}
+.moduletable.mod-title-center h3 {
+	text-align: center;
+}
+
+.moduletable.mod-border-orange {
+	border: 3px solid $orange;
+	border-radius: 8px;
+	padding: 6px;
+	margin-bottom: 15px;
 }
